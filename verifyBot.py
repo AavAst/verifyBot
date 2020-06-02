@@ -51,9 +51,6 @@ async def verify(ctx, nation_to_verify: str, verify_token: str):
         """
         sh = gc.open_by_key("1eQQK6QcKYq7duUWYWcJJjs53uHJ1XWmeT4tsUqTn72Q")
         ws = sh.worksheet("database")
-        headers = {
-       'User-Agent' : "Email: aav.verinhall@gmail.com, Nation: United Calanworie"
-        }
 
         payload = {
            'a' :'verify' , 'nation' : nation_to_verify, "checksum" : verify_token
